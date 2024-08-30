@@ -1,81 +1,277 @@
-<!DOCTYPE html>
-<html>
-<body>
-
-<!--This is a comment-->
-<p>This is a parageaph.</p>
-<!-- Coments are not displayed in the browser-->
-
-</body>
-</html>
-
-
-
-<!DOCTYPE html>
+<!doctype>
 <html>
 <head>
-<title>title of the document</title>
+<style>
+.intro {
+  background-color: yellow;
+}
+</style>
+</head>
+<body>
+
+<h1>Demo of the .class selector</h1>
+
+<div class="intro">
+  <p>My name is Donald.</p>
+  <p>I live in Duckburg.</p>
+</div>
+
+<p>My best friend is Micky.</p>
+
+<p class="intro">My best friend is Mickey.</p>
+
+</body>
+</html>  
+
+
+
+<!DOCTYPE>
+<html>
+<head>
+<style>
+#firstname {
+  background-color: yello;
+}  
+</style>
+</head>
+<body>
+
+<h1>Demo of the #id sellector</h1>
+
+<div class="intro">
+  <p id="firsttime">My name is donald.</p>
+  <p id="hometown">I live in duckburg.</p>
+</div>
+
+<p>My best friend name is Mickey.</p>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+<!DOCTYPE>
+<html>
+<head>
+<style>
+* {
+  background-color: yello;
+}
+</style>
+</head>
+<body>
+
+<h1>Demo of the * selector</h1>
+
+<div class="intro">
+  <p id="firstname">My name is donald.</p>
+  <p id="hometown">I live in Duckburg.</p>
+</div>
+
+<p>My best friend name is Mickey.</p>
+
+</body>
+</html>
+
+<!DOCTYPE>
+<html>
+<head>
+<style>
+p {
+  background-color: yellow;
+}
+</style>
+</head>
+<body>
+
+  <h1>Demo of the element selector</h1>
+
+<div>
+  <p id="firstname">My name is Donald.</p>
+  <p id="hometown">I live in Duckburg.</p>
+</div>
+
+<p>My best friend name is Mickey.</p>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+<!DOCTYPE>
+<html>
+<head>
+<style>
+p.intro {
+  background-color: yellow;
+}
+</style>
+</head>
+<body>
+
+<h1>Demo of the element.class selector</h1>
+
+<div class="intro">
+  <p>My name is Donald.</p>
+  <p>I live in Duckburg.</p>
+</div>
+
+
+<p>My best friend is Micky.</p>
+
+<p class="intro">My best friend is Mickey.</p>
+
+</body>
+</html>
+
+
+
+<!DOCTYPE>
+<html>
+<head>
+<style>
+h2, p {
+  background-color: yellow;
+}
+</style>
+<body>
+
+<h1>Demo of the element, element selector</h1>
+
+<h2>Welcome to my Homepage</h2>
+
+<div>
+   <p>My name is Donald.</p>
+   <p>I live in Duckburg.</p>
+ </div>
+
+ <p>My best friend is Mickey.</p>
+
+</body>
 </head>
 
-<body>
-The content of the document......
-</body>
 
-</html>
-<!DOCTYPE html>
+
+<!DOCTYPE>
 <html>
+<head>
+<style>
+div p {
+  background-color: yellow;
+}
+</style>
+</head>
 <body>
-<h1>This is a element</h1>
 
-<a href="https://www.w3schools.com">Visit W3Schools.com!</a>
+<h1>Demo of the element element selector</h1>
+
+<div>
+  <h2>My name is Donald</h2>
+  <p>I live in Duckburg.</p>
+</div>
+
+<p>My best friend is Micky.</p>
 
 </body>
-</html>
-
-
-
-<!DOCTYPE html>
+<!DOCTYPE>
 <html>
+<head>
+<style>
+div > p {
+  background-color: yellow;
+}
+</style>
+</head>
 <body>
-<h1>The abbr element</h1>	
 
-<p>The <abbr title="world Health Orgaination">WHO</abbr>was founded in 1948.</p>
+<h1>Demo of the element > element selector</h1>
+
+<div>
+  <h2>My name is Donald</h2>
+  <p>I live in Duckburg.</p>
+</div>
+
+<div>
+  <span><p>I will not be styled.</p></span>
+</div>
+
+<p>My best friend name is Mickey</p>
+
 </body>
 </html>
 
 
-</DOCTYPE html>
+
+
+
+<!DOCTYPE>
 <html>
+<head>
+<style>
+div + p {
+  background-color: yellow;
+}
+</style>
+</head>
 <body>
+<h1>Demo of the element + element selector</h1>
 
-<h1>The addres element</h1>
+<div>
+  <h2>My name is Donald</h2>
+  <p>I live in Duckburg.</p>
+</div>
 
-<addres>
-Writen by <a href="mailto:webmaster@example.com">Jon Doe</a>.<br>
-Visit us at:<br>
-Example.<br>
-Box 564, Disneyland<br>
-</addres>
+<p>My best friend is Mickey.</p>
+
+<p>I will not be styled.</p>
 
 </body>
 </html>
 
 
-
-<!DOCTYPE html>
+<!DOCTYPE>
 <html>
+<head>
+<style>
+p ~ ui {
+  background-color: #ff000;
+}
+</style>
+</head>
 <body>
 
-<h1>The map and area element</h1>
 
-<p>Click on the computer, the phone, or the cup of coffee to go a new page and read more about the topic:</p>
+<div>A div element.</div>
+<u1>
+  <li>Coffe></li>
+  <li>Tea</li>
+  <li>Milk</li>
+</u1>
 
-<img src="workplace.jpg" alt="workplace" usemap="#workmap" width="00"height="379">
-<map name="workmap">
- <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
- <area shape="rect" cords="290,172,333,250" alt="phone" href="phone.htm">
- <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffe.htm">
-</map>
+<p>The first paragraph.</p>
+<u1>
+  <li>Coffe</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</u1>
+
+<h2>Another list</h2>
+<u1>
+  <li>Coffe</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</u1>
 
 </body>
 </html>
@@ -83,29 +279,694 @@ Box 564, Disneyland<br>
 
 
 
-<!DOCTYPE html>
+
+<!DOCTYPE>
 <html>
+<head>
+<style>
+a[target] {
+  background-color: yellow;
+}
+</style>
+</head>
 <body>
 
-<h1>The article element</h1>
+<h1>Demo of the [attribute] selector</h1>
 
-<article>
-  <h2>Google Chrome</h2>
-  <p>Google Chrome is a web browser devloped by Google, released in 2008. Chrome is the world's most web browser today!</p>
-</article>
+<p>Link with a target attribute is styled with a yellow background:</p>
 
-<article>
-	<h2>Mozilla Firefox</h2>
-	<p>Mozilla Firefox is an open-source web browser devloped by mozilla. Firefox has benn the secound most popular web browser since January, 2018.</p>
-</article>
-
-<artcle>
-  <h2>Microsoft Edge</h2>
-  <p>Microsoft Edge is a web browser devloped by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.</p>
- </artcle>
+<a href="https://www.w3school.com">W3schools.com</a><br>
+<a href="https://www.google.com" target="_blank">Google.com</a><br>
+<a href="https://www.microsoft.com" target="_blank">Microsoft.com</a>
 
 </body>
 </html>
+
+
+
+
+<!DOCTYPE>
+<html>
+<head>
+<style>
+a[target="_blank_"] {
+  background-color: yellow;
+</style>
+</head>
+<body>
+
+<h1>Demo of the [attribute] selector</h1>
+
+<p>Links with target="_blank" is styled with a yellow background:</p>
+
+<a href="https://www.w3schools.com">W3schools.com</a><br>
+<a href="https://www.google.com" target="_blank">Google.com</a><br>
+<a href="https://www.microsoft.com" target="_blank">Microsoft.com</a>
+
+</body>
+</html>  
+
+
+
+
+
+<!DOCTYPE>
+<html>
+<head>
+<style>
+[title~="flower"] {
+  border: 5px solid yellow;
+}
+</style>
+</head>
+<body>
+
+<h1>Demo of the [attribute~=value] selector</h1>
+
+<p>Element with a title attribute containing the word "flower" is styled with a yellow border:</p>
+
+<img src="klematis.jpg" title="klematis flower" width="150" height="113">
+<img src="img_flwr.gif" title="flower" width="224" height="162">
+<img src="landscape.jpg" title="landscape" width="160" height="120">
+
+</body>
+</html>
+
+
+
+
+<!DOCTYPE>
+<html>
+<head>
+<style>
+[lang|="en"] {
+  background:yellow;
+}
+</style>
+</head>
+<body>
+
+<h1>Demo of the [attribute|=value] selector</h1>
+
+<p>Elements with a lang attribute with value "en" is styled with a yellow background:</p>
+
+<p lang="en">Hello!</p>
+<p lang="en-us">Hi!</p>
+<p lang="en-gb">Ello!</p>
+<p lang="us">Hi</p>
+<p lang="no">Hei!</p>
+
+</body>
+</html>
+
+
+
+
+
+<!DOCTYPE>
+<html>
+<head>
+<style>
+div[class^="test"] {
+  background: #fff00;
+}
+</style>
+</head>
+<body>
+
+<div class="first_test">The first div element.</div>
+<div class="secound">The secound div element.</div>
+<div class="test">The third div element.</div>
+<div class="test_ex">The fourth div element.</div>
+<p class="test">This is a paragraph.</p>
+<p class="test_ex">This is a paragraph.</p>
+
+</body>
+</html>
+
+
+
+<!DOCTYPE>
+<html>
+<head>
+<style>
+div[class$=test] {
+  background: #fff00;
+}
+</style>
+</head>
+<body>
+
+<div class="first_test">The first div element.</div>
+<div class="secound">The secound div element.</div>
+<div class="test">The third div element.</div>
+<p class="test">This is some text in a paragraph.</p>
+
+</body>
+</html>
+
+
+
+<!DOCTYPE>
+<html>
+<head>
+<style>
+div[class*=test] {
+  background: #fff00;
+}
+</style>
+</head>
+<body>
+
+
+<div classs="first_test">The first div element.</div>
+<div class="secound">The secound div element.</div>
+<div class="test">The third div element.</div>
+<p class="test">This is some text in a paragraph.</p>
+
+</body>
+</html>
+
+
+
+
+<!DOCTYPE>
+<html>
+<head>
+<style>
+a:activee {
+  background-color: yellow;
+}
+</style>
+</head>
+<body>
+
+
+<h1>Demo of the :active selectorr</h1>
+
+<a href="https://www.w3schools.com">W3schools.com</a>
+<a href="https://www.w3schools.com/HTML/"></a><br>
+<a href="https://www.w3schools.com/css/">CSS</a>
+
+<p><b>Note:</b> The :active selector styles the active link.</p>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE>
+<html>
+<head>
+<style>
+p::after {
+  content: " - Remember this";
+}
+</style>
+</head>
+<body>
+
+<h1>Demo of the ::after selector</h1>
+<p>My name is Donald</p>
+<p>I live in ducksburg</p>
+
+</body>
+</html>
+
+
+
+
+
+<!DOCTYPE>
+<html>
+<head>
+<style>
+p::before {
+  content: "Read this -";
+}
+</style>
+</head>
+<body>
+
+<h1>Demo of the ::before selector</h1>
+
+<p>My name is Donald</p>
+<p>I live in Ducksburg</p>
+
+</body>
+</html>
+
+
+
+<!DOCTYPE>
+<html>
+<head>
+<style>
+input:checked {
+  height: 50px;
+  width: 50px;
+}
+</style>
+</head>
+<body>
+
+ <from action="">
+ <input type="radio" checked="checked"  value="male" name="gender">Male<br>
+ <input type="radio" value="female" name="gender">Female<br>
+ <input type="cheakbox" checked="checked" value="Bike">I have a bike<br>
+ <input type="checkbox" value="Car">I have a car
+</from>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
